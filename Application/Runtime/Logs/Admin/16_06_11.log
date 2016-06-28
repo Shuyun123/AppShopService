@@ -1,0 +1,86 @@
+[ 2016-06-11T22:11:08+08:00 ] ::1 /AppShopService/index.php/Admin/Index/index/tab/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Connection refused /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+ERR: Connection refused
+
+[ 2016-06-11T22:11:47+08:00 ] ::1 /AppShopService/index.php/Admin/Index/index/tab/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Connection refused /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+ERR: Connection refused
+
+[ 2016-06-11T22:12:01+08:00 ] ::1 /AppShopService/index.php/Admin/Index/index/tab/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.009057s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.001313s ]
+SQL: SELECT * FROM `product` ORDER BY type asc  [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001360s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.001292s ]
+SQL: SELECT * FROM `buy` INNER JOIN  user on buy.uid = user.id INNER JOIN product on buy.pid = product.id   [ RunTime:0.002653s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.000441s ]
+SQL: SELECT `id` FROM `buy`  [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: show /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 130 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 321 行.
+NOTIC: [8] Undefined index: logintime /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 323 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 321 行.
+NOTIC: [8] Undefined index: logintime /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 323 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 321 行.
+NOTIC: [8] Undefined index: logintime /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 323 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 321 行.
+NOTIC: [8] Undefined index: logintime /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 323 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 351 行.
+NOTIC: [8] Undefined index: ispay /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 387 行.
+NOTIC: [8] Undefined index: ispay /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 389 行.
+NOTIC: [8] Undefined index: isdeliver /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 392 行.
+NOTIC: [8] Undefined index: isdeliver /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 394 行.
+NOTIC: [8] Undefined index: isaccess /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 397 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 351 行.
+NOTIC: [8] Undefined index: ispay /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 387 行.
+NOTIC: [8] Undefined index: ispay /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 389 行.
+NOTIC: [8] Undefined index: isdeliver /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 392 行.
+NOTIC: [8] Undefined index: isdeliver /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 394 行.
+NOTIC: [8] Undefined index: isaccess /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 397 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 351 行.
+NOTIC: [8] Undefined index: ispay /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 387 行.
+NOTIC: [8] Undefined index: ispay /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 389 行.
+NOTIC: [8] Undefined index: isdeliver /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 392 行.
+NOTIC: [8] Undefined index: isdeliver /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 394 行.
+NOTIC: [8] Undefined index: isaccess /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 397 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 351 行.
+NOTIC: [8] Undefined index: ispay /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 387 行.
+NOTIC: [8] Undefined index: ispay /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 389 行.
+NOTIC: [8] Undefined index: isdeliver /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 392 行.
+NOTIC: [8] Undefined index: isdeliver /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 394 行.
+NOTIC: [8] Undefined index: isaccess /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 397 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.075352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.075407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+

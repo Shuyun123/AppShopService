@@ -1,0 +1,563 @@
+[ 2016-06-19T08:51:42+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013397s ]
+
+[ 2016-06-19T08:52:26+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2016-06-19T08:52:38+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2016-06-19T08:53:09+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2016-06-19T09:19:50+08:00 ] ::1 /AppShopService/index.php/Home/index/getCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014167s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.009557s ]
+SQL: SELECT * FROM `comment` LEFT JOIN product ON comment.pid = product.id LEFT JOIN user ON comment.uid = user.id   [ RunTime:0.005249s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000472s ]
+SQL: SELECT `id` FROM `comment`  [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 337 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 337 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 337 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 337 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014123s ]
+
+[ 2016-06-19T10:37:10+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000626s ]
+SQL: SELECT * FROM `subcomment` INNER JOIN  user on subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.002020s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000380s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000179s ]
+
+[ 2016-06-19T10:38:51+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000552s ]
+SQL: SELECT * FROM `subcomment` LFFT JOIN user on subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000224s ]
+ERR: 1054:Unknown column 'subcomment.uid' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM `subcomment` LFFT JOIN user on subcomment.uid = user.id  WHERE ( cid = 27 ) 
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000432s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000203s ]
+
+[ 2016-06-19T10:39:12+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000555s ]
+SQL: SELECT * FROM `subcomment` LEFT JOIN user ON subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000389s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000198s ]
+
+[ 2016-06-19T10:39:57+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000567s ]
+SQL: SELECT * FROM `subcomment` RIGHT JOIN user ON subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000375s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000167s ]
+
+[ 2016-06-19T10:39:58+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000539s ]
+SQL: SELECT * FROM `subcomment` RIGHT JOIN user ON subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000387s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000178s ]
+
+[ 2016-06-19T10:40:45+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000571s ]
+SQL: SELECT * FROM `user` INNER JOIN  subcomment subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000135s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.uid = user.id  WHERE ( cid = 27 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` INNER JOIN  subcomment subcomment.uid = user.id  WHERE ( cid = 27 ) 
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000413s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000231s ]
+
+[ 2016-06-19T10:41:36+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000547s ]
+SQL: SELECT * FROM `subcomment` INNER JOIN  user  user.id = subcomment.uid   WHERE ( cid = 27 )  [ RunTime:0.000131s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id = subcomment.uid   WHERE ( cid = 27 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `subcomment` INNER JOIN  user  user.id = subcomment.uid   WHERE ( cid = 27 ) 
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000396s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000198s ]
+
+[ 2016-06-19T10:41:38+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000534s ]
+SQL: SELECT * FROM `subcomment` INNER JOIN  user  user.id = subcomment.uid   WHERE ( cid = 27 )  [ RunTime:0.000143s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id = subcomment.uid   WHERE ( cid = 27 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `subcomment` INNER JOIN  user  user.id = subcomment.uid   WHERE ( cid = 27 ) 
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000356s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000185s ]
+
+[ 2016-06-19T10:41:39+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000522s ]
+SQL: SELECT * FROM `subcomment` INNER JOIN  user  user.id = subcomment.uid   WHERE ( cid = 27 )  [ RunTime:0.000142s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id = subcomment.uid   WHERE ( cid = 27 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `subcomment` INNER JOIN  user  user.id = subcomment.uid   WHERE ( cid = 27 ) 
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000362s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000187s ]
+
+[ 2016-06-19T10:41:39+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000588s ]
+SQL: SELECT * FROM `subcomment` INNER JOIN  user  user.id = subcomment.uid   WHERE ( cid = 27 )  [ RunTime:0.000162s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id = subcomment.uid   WHERE ( cid = 27 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `subcomment` INNER JOIN  user  user.id = subcomment.uid   WHERE ( cid = 27 ) 
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000408s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000217s ]
+
+[ 2016-06-19T10:42:02+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000529s ]
+SQL: SELECT * FROM `subcomment` INNER JOIN  user user.id = subcomment.uid   WHERE ( cid = 27 )  [ RunTime:0.000138s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id = subcomment.uid   WHERE ( cid = 27 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `subcomment` INNER JOIN  user user.id = subcomment.uid   WHERE ( cid = 27 ) 
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000363s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000188s ]
+
+[ 2016-06-19T10:42:03+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000562s ]
+SQL: SELECT * FROM `subcomment` INNER JOIN  user user.id = subcomment.uid   WHERE ( cid = 27 )  [ RunTime:0.000136s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id = subcomment.uid   WHERE ( cid = 27 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `subcomment` INNER JOIN  user user.id = subcomment.uid   WHERE ( cid = 27 ) 
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000371s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000194s ]
+
+[ 2016-06-19T10:42:15+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000541s ]
+SQL: SELECT * FROM `subcomment` INNER JOIN  user subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000130s ]
+ERR: 1066:Not unique table/alias: 'subcomment'
+ [ SQL语句 ] : SELECT * FROM `subcomment` INNER JOIN  user subcomment.uid = user.id  WHERE ( cid = 27 ) 
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000422s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000200s ]
+
+[ 2016-06-19T10:42:16+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000630s ]
+SQL: SELECT * FROM `subcomment` INNER JOIN  user subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000221s ]
+ERR: 1066:Not unique table/alias: 'subcomment'
+ [ SQL语句 ] : SELECT * FROM `subcomment` INNER JOIN  user subcomment.uid = user.id  WHERE ( cid = 27 ) 
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000566s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000246s ]
+
+[ 2016-06-19T10:42:40+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000503s ]
+SQL: SELECT * FROM `subcomment` LEFT JOIN user ON subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000386s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000174s ]
+
+[ 2016-06-19T10:43:07+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000508s ]
+SQL: SELECT * FROM `subcomment` INNER JOIN  user on user.id = subcomment.uid   WHERE ( cid = 27 )  [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000397s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000177s ]
+
+[ 2016-06-19T10:43:09+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000526s ]
+SQL: SELECT * FROM `subcomment` INNER JOIN  user on user.id = subcomment.uid   WHERE ( cid = 27 )  [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000552s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000279s ]
+
+[ 2016-06-19T10:43:31+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000549s ]
+SQL: SELECT * FROM `user` INNER JOIN  subcomment on user.id = subcomment.uid   WHERE ( cid = 27 )  [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000364s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000169s ]
+
+[ 2016-06-19T10:44:58+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000553s ]
+SQL: SELECT * FROM `subcomment` INNER JOIN user on subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000446s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000206s ]
+
+[ 2016-06-19T10:47:37+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000489s ]
+SQL: SELECT * FROM `subcomment` LEFT JOIN user ON subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000397s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000179s ]
+
+[ 2016-06-19T10:47:39+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000514s ]
+SQL: SELECT * FROM `subcomment` LEFT JOIN user ON subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000604s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000214s ]
+
+[ 2016-06-19T10:48:59+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000536s ]
+SQL: SELECT * FROM `subcomment` LEFT JOIN user ON subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000368s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000221s ]
+
+[ 2016-06-19T10:49:18+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000701s ]
+SQL: SELECT * FROM `subcomment` RIGHT JOIN user ON subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000462s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000254s ]
+
+[ 2016-06-19T10:49:20+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000710s ]
+SQL: SELECT * FROM `subcomment` RIGHT JOIN user ON subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000512s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000247s ]
+
+[ 2016-06-19T10:49:44+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000525s ]
+SQL: SELECT * FROM `user` RIGHT JOIN subcomment ON subcomment.uid = user.id  WHERE ( cid = 27 )  [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000369s ]
+SQL: SELECT `id` FROM `subcomment`  [ RunTime:0.000251s ]
+
+[ 2016-06-19T10:51:06+08:00 ] ::1 /AppShopService/index.php/Home/index/getSubCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015771s ]
+
+[ 2016-06-19T13:18:09+08:00 ] ::1 /AppShopService/index.php/Home/index/getCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000584s ]
+SQL: SELECT * FROM `product` LEFT JOIN comment ON comment.pid = product.id LEFT JOIN user ON comment.uid = user.id   [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000397s ]
+SQL: SELECT `id` FROM `comment`  [ RunTime:0.000170s ]
+
+[ 2016-06-19T13:18:18+08:00 ] ::1 /AppShopService/index.php/Home/index/getCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000552s ]
+SQL: SELECT * FROM `product` LEFT JOIN comment ON comment.pid = product.id LEFT JOIN user ON comment.uid = user.id   [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000379s ]
+SQL: SELECT `id` FROM `comment`  [ RunTime:0.000163s ]
+
+[ 2016-06-19T13:19:57+08:00 ] ::1 /AppShopService/index.php/Home/index/getCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000542s ]
+SQL: SELECT * FROM `product` RIGHT JOIN comment ON comment.pid = product.id RIGHT JOIN user ON comment.uid = user.id   [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000399s ]
+SQL: SELECT `id` FROM `comment`  [ RunTime:0.000171s ]
+
+[ 2016-06-19T13:21:54+08:00 ] ::1 /AppShopService/index.php/Home/index/getCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000559s ]
+SQL: SELECT * FROM `comment` LEFT JOIN product ON comment.pid = product.id LEFT JOIN user ON comment.uid = user.id   [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000415s ]
+SQL: SELECT `id` FROM `comment`  [ RunTime:0.000177s ]
+
+[ 2016-06-19T13:33:02+08:00 ] ::1 /AppShopService/index.php/Home/index/updateLikes?cid=29&likeNumber=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000814s ]
+SQL: UPDATE `comment` SET `like`='6' WHERE ( id=29 ) [ RunTime:0.002672s ]
+
+[ 2016-06-19T13:33:23+08:00 ] ::1 /AppShopService/index.php/Home/index/getCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000631s ]
+SQL: SELECT * FROM `comment` LEFT JOIN product ON comment.pid = product.id LEFT JOIN user ON comment.uid = user.id   [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000632s ]
+SQL: SELECT `id` FROM `comment`  [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.381293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.381359s ]
+
+[ 2016-06-19T13:33:26+08:00 ] ::1 /AppShopService/index.php/Home/index/getCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000614s ]
+SQL: SELECT * FROM `comment` LEFT JOIN product ON comment.pid = product.id LEFT JOIN user ON comment.uid = user.id   [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000421s ]
+SQL: SELECT `id` FROM `comment`  [ RunTime:0.000176s ]
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2016-06-19T13:36:06+08:00 ] ::1 /AppShopService/index.php/Home/index/getCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000554s ]
+SQL: SELECT * FROM `comment` LEFT JOIN product ON comment.pid = product.id LEFT JOIN user ON comment.uid = user.id   [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000424s ]
+SQL: SELECT `id` FROM `comment`  [ RunTime:0.000170s ]
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2016-06-19T13:36:08+08:00 ] ::1 /AppShopService/index.php/Home/index/getCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000614s ]
+SQL: SELECT * FROM `comment` LEFT JOIN product ON comment.pid = product.id LEFT JOIN user ON comment.uid = user.id   [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000497s ]
+SQL: SELECT `id` FROM `comment`  [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 339 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+

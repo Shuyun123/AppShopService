@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/lib/normalize.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/lib/flat-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/manage.css">
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="__PUBLIC__/Js/lib/require.js" data-main="__ROOT__/Public/Js/manage_main"></script>
+    <script type="text/javascript">
+
+
+        $("#fileUpload").live('change',function(){
+            var file = String($("#fileUpload").val());
+            var pos = file.lastIndexOf("\\");
+            var fileName = file.substring(pos+1);
+            var pos2 = file.lastIndexOf(".");
+            var endStr = String(file.substring(pos2+1));
+            if((endStr != "jpg") && (endStr != "jpeg") && (endStr != "png") && (endStr != "JPG") && (endStr != "JPEG") && (endStr != "PNG")){
+                alert("图片格式不正确!");
+                location.reload();
+            }else{
+                if(endStr == null){
+                    alert("图片不能为空!");
+                    location.reload();
+                }else{
+                    document.getElementById('displayName').innerHTML = fileName;
+                }
+            }
+        });
+
+
+        $("#fileUpload2").live('change',function(){
+            var file = String($("#fileUpload2").val());
+            var pos = file.lastIndexOf("\\");
+            var fileName = file.substring(pos+1);
+            var pos2 = file.lastIndexOf(".");
+            var endStr = String(file.substring(pos2+1));
+            if((endStr != "jpg") && (endStr != "jpeg") && (endStr != "png") && (endStr != "JPG") && (endStr != "JPEG") && (endStr != "PNG")){
+                alert("图片格式不正确!");
+                location.reload();
+            }else{
+                if(endStr == null){
+                    alert("图片不能为空!");
+                    location.reload();
+                }else{
+                    document.getElementById('displayName2').innerHTML = fileName;
+                }
+            }
+        });
+
+
+        $("#fileUpload3").live('change',function(){
+            var file = String($("#fileUpload3").val());
+            var pos = file.lastIndexOf("\\");
+            var fileName = file.substring(pos+1);
+            var pos2 = file.lastIndexOf(".");
+            var endStr = String(file.substring(pos2+1));
+            if((endStr != "apk") && (endStr != "APK")){
+                alert("App格式不正确!");
+                location.reload();
+            }else{
+                if(endStr == null){
+                    alert("请选择App!");
+                    location.reload();
+                }else{
+                    document.getElementById('displayName3').innerHTML = fileName;
+                }
+            }
+        });
+
+
+        $(document).ready(function(){
+            $(".selectType").change(function(){
+                //alert($(this).children('option:selected').val());
+                var p1=$(this).children('option:selected').val();//这就是selected的值
+                if(p1>1){
+                    $("#product_detail").hide();
+                }else{
+                    $("#product_detail").show();
+                }
+            })
+        })
+
+
+    </script>
+</head>
+<body>
+<div class="container-fluid" >
+    <div class="row">
+        <div class="col-md-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">选项</div>
+                <div class="panel-body">
+                    <ul class="nav nav-pills nav-stacked nav-option">
+                        <li class="<if condition='($tab eq 1)'>active</if>" role="presentation">
+                            <a href="{:U('/Admin/Index/index/tab/1')}">App轮播</a>
+                        </li>
+                        <li class="<if condition='($tab eq 2)'>active</if>" role="presentation">
+                            <a href="{:U('/Admin/Index/index/tab/2')}">添加轮播</a>
+                        </li>
+                        <li class="<if condition='($tab eq 3)'>active</if>" role="presentation">
+                            <a href="{:U('/Admin/Index/index/tab/3')}">商品列表</a>
+                        </li>
+                        <li class="<if condition='($tab eq 4)'>active</if>" role="presentation">
+                            <a href="{:U('/Admin/Index/index/tab/4')}">添加商品</a>
+                        </li>
+                        <li class="<if condition='($tab eq 5)'>active</if>" role="presentation">
+                            <a href="{:U('/Admin/Index/index/tab/5')}">用户列表</a>
+                        </li>
+                        <li class="<if condition='($tab eq 6)'>active</if>" role="presentation">
+                            <a href="{:U('/Admin/Index/index/tab/6')}">用户购买清单</a>
+                        </li>
+
+                        <li class="<if condition='($tab eq 7)'>active</if>" role="presentation">
+                            <a href="{:U('/Admin/Index/index/tab/7')}">上传新版本App</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div style="float:inherit;"><a href="{:U('Index/index',array('tab'=>1))}" style="color:white;">App商城后台管理</a></div>
+                    <div style="float: right;margin-top: -25px;margin-right: 160px;">
+                        用户名:<?php echo $_SESSION['username'];?>
+                        <a href="{:U('Index/logout')}"><button style=";border: 5psolid #dedede;-moz-border-radius: 15px;-webkit-border-radius: 15px;border-radius:15px;  background: dodgerblue;color:white;">退出</button></a>
+                    </div>
+                </div>
+                <div class="panel-body row">
+                    <!--<div class="loading" ms-if="!loaded">loading.......</div>-->
+                    <div class="list <if condition='($tab eq 1)'>show</if>">
+                        <div>
+                            <div>
+                                <table class="table table-hover">
+                                    <tr>
+                                        <th>图片名称</th>
+                                        <th>图片id</th>
+                                        <th>图片描述</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <foreach name="banner" item="value">
+                                        <tr>
+                                            <td>{$value.name} </td>
+                                            <td>{$value.number} </td>
+                                            <td>{$value.introduce} </td>
+                                            <td><a href="{:U('Index/deleteBanner',array('id'=>$value['id'],'tab'=>1))}">删除</a></td>
+                                        </tr>
+                                    </foreach>
+                                </table>
+                            </div>
+                            <ul class="pagination-plain">
+                                <?php echo $show;?>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="add-item col-md-6 <if condition='($tab eq 2)'>show</if>">
+                        <form class="form-horizontal" role="form" enctype="multipart/form-data" method="post" action="{:U('Index/dealData')}" id="form">
+                            <div class="form-group">
+                                <label for="inputTitle" class="col-lg-2 control-label">图片名称</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputTitle" placeholder="图片名称" style="width:180px" name="pictureName">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputNum" class="col-lg-2 control-label">图片id</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputNum" placeholder="图片id" style="width:180px" name="id">
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                <label for="inputTitle" class="col-lg-2 control-label">图片描述</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputTime" placeholder="图片描述" style="width:180px" name="introduceImg">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-lg-offset-2 col-lg-10">
+                                        <input type="file" name="file" class="upload" id="fileUpload"/>
+                                       <label id="displayName"></label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button type="submit" class="btn btn-default">确定</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="award-deatil <if condition='($tab eq 3)'>show</if>">
+
+                        <div>
+                            <table class="table table-hover">
+                                <tr>
+                                    <th>商品名称</th>
+                                    <th>商品价格</th>
+                                    <th>商品类别</th>
+                                    <th>运营商</th>
+                                    <th>颜色</th>
+                                    <th>内存</th>
+                                    <th>操作</th>
+                                </tr>
+
+                                <foreach name="product" item="value">
+                                    <tr>
+                                        <td>{$value.name} </td>
+                                        <td>{$value.price} </td>
+                                        <td>
+                                            <if condition="($value.type eq 0)"> 全新手机
+                                                <elseif condition="$value.type eq 1"/> 二手良品
+                                                <elseif condition="$value.type eq 2"/> 手机配件
+                                                <else /> 手机壳/膜
+                                            </if>
+                                        </td>
+                                        <td>
+                                            <if condition="($value.carrieroperator eq 0)"> 移动4G
+                                                <elseif condition="$value.carrieroperator eq 1"/> 联通4G
+                                                <elseif condition="$value.carrieroperator eq 2"/> 电信4G
+                                                <elseif condition="$value.carrieroperator eq 3"/> 全网通
+                                                <else /> ---
+                                            </if>
+
+
+                                        </td>
+                                        <td>
+                                            <if condition="($value.color eq 0)"> 深空灰
+                                                <elseif condition="$value.color eq 1"/> 银色
+                                                <elseif condition="$value.color eq 2"/> 香槟金
+                                                <elseif condition="$value.color eq 3"/> 玫瑰金
+                                                <elseif condition="$value.color eq 4"/> 黑色
+                                                <elseif condition="$value.color eq 5"/> 白色
+                                                <else /> ---
+                                            </if>
+                                        </td>
+                                        <td>
+                                            <if condition="($value.storage eq 0)"> 16G
+                                                <elseif condition="$value.storage eq 1"/> 32G
+                                                <elseif condition="$value.storage eq 2"/> 64G
+                                                <elseif condition="$value.storage eq 3"/> 128G
+                                                <else /> ---
+                                            </if>
+                                        </td>
+                                        <td><a href="{:U('Index/deleteProduct',array('id'=>$value['id'],'tab'=>3))}">删除</a></td>
+                                    </tr>
+                                </foreach>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="award-deatil <if condition='($tab eq 4)'>show</if>">
+
+
+                        <form class="form-horizontal" role="form" enctype="multipart/form-data" method="post" action="{:U('Index/addProduct')}" id="form">
+                            <div class="form-group">
+                                <label for="inputTitle" class="col-lg-2 control-label">商品名称</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputTitle" placeholder="商品名称" style="width:180px" name="productName">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputNum" class="col-lg-2 control-label">商品价格</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputNum" placeholder="商品价格" style="width:180px" name="price">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputNum" class="col-lg-2 control-label">商品类别</label>
+                                <label id="lblSelect" style="margin-left: 16px">
+                                    <select id="selectPoint" name="type" class="selectType">
+                                        <option value ="0">全新手机</option>
+                                        <option value ="1">二手良品</option>
+                                        <option value="2">手机配件</option>
+                                        <option value="3">手机壳/膜</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div id="product_detail" style="display: block">
+                                <div class="form-group" >
+                                    <label for="inputNum" class="col-lg-2 control-label">运营商</label>
+                                    <label id="lblSelect" style="margin-left: 16px">
+                                        <select id="selectPoint" name="carrieroperator">
+                                            <option value ="0">移动4G</option>
+                                            <option value ="1">联通4G</option>
+                                            <option value="2">电信4G</option>
+                                            <option value="3">全网通</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="form-group" >
+                                    <label for="inputNum" class="col-lg-2 control-label">颜色</label>
+                                    <label id="lblSelect" style="margin-left: 16px">
+                                        <select id="selectPoint" name="color">
+                                            <option value ="0">深空灰</option>
+                                            <option value ="1">银色</option>
+                                            <option value="2">香槟金</option>
+                                            <option value="3">玫瑰金</option>
+                                            <option value="4">黑色</option>
+                                            <option value="5">白色</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="form-group" >
+                                    <label for="inputNum" class="col-lg-2 control-label">内存</label>
+                                    <label id="lblSelect" style="margin-left: 16px">
+                                        <select id="selectPoint" name="storage">
+                                            <option value ="0">16G</option>
+                                            <option value ="1">32G</option>
+                                            <option value="2">64G</option>
+                                            <option value="3">128G</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
+                                <div class="form-group">
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                        <input type="file" name="file" class="upload" id="fileUpload2"/>
+                                        <label id="displayName2"></label>
+                                    </div>
+                                </div>
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button type="submit" class="btn btn-default">确定</button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                    <div class="award-deatil <if condition='($tab eq 5)'>show</if>">
+
+                        <div>
+                            <table class="table table-hover">
+                                <tr>
+                                    <th>用户id</th>
+                                    <th>用户名称</th>
+                                    <th>用户电话</th>
+                                    <th>注册时间</th>
+                                </tr>
+
+                                <foreach name="userInfo" item="value">
+                                    <tr>
+                                        <td>{$value.id} </td>
+                                        <td>{$value.username}</td>
+                                        <td>{$value.phone}</td>
+                                        <td>{$value.logintime|date="Y-m-d H:i:s",###}</td>
+
+                                    </tr>
+                                </foreach>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="award-deatil <if condition='($tab eq 6)'>show</if>">
+
+                        <div>
+                            <table class="table table-hover">
+                                <tr>
+                                    <th>购买用户</th>
+                                    <th>商品名称</th>
+                                    <th>商品单价</th>
+                                    <th>商品类别</th>
+                                    <th>运营商</th>
+                                    <th>颜色</th>
+                                    <th>内存</th>
+                                    <th>购买数量</th>
+                                    <th>应付款额</th>
+                                    <th>是否付款</th>
+                                    <th>是否发货</th>
+                                    <th>是否评价</th>
+                                </tr>
+
+                                <foreach name="orderInfo" item="value">
+                                    <tr>
+
+                                        <td>{$value.username} </td>
+                                        <td>{$value.name} </td>
+                                        <td>{$value.price} </td>
+                                        <td>
+                                            <if condition="($value.type eq 0)"> 全新手机
+                                                <elseif condition="$value.type eq 1"/> 二手良品
+                                                <elseif condition="$value.type eq 2"/> 手机配件
+                                                <else /> 手机壳/膜
+                                            </if>
+                                        </td>
+                                        <td>
+                                            <if condition="($value.carrieroperator eq 0)"> 移动4G
+                                                <elseif condition="$value.carrieroperator eq 1"/> 联通4G
+                                                <elseif condition="$value.carrieroperator eq 2"/> 电信4G
+                                                <elseif condition="$value.carrieroperator eq 3"/> 全网通
+                                                <else /> ---
+                                            </if>
+
+                                        </td>
+                                        <td>
+                                            <if condition="($value.color eq 0)"> 深空灰
+                                                <elseif condition="$value.color eq 1"/> 银色
+                                                <elseif condition="$value.color eq 2"/> 香槟金
+                                                <elseif condition="$value.color eq 3"/> 玫瑰金
+                                                <elseif condition="$value.color eq 4"/> 黑色
+                                                <elseif condition="$value.color eq 5"/> 白色
+                                                <else /> ---
+                                            </if>
+                                        </td>
+                                        <td>
+                                            <if condition="($value.storage eq 0)"> 16G
+                                                <elseif condition="$value.storage eq 1"/> 32G
+                                                <elseif condition="$value.storage eq 2"/> 64G
+                                                <elseif condition="$value.storage eq 3"/> 128G
+                                                <else /> ---
+                                            </if>
+                                        </td>
+                                        <td>{$value.sum} </td>
+                                        <td style="color: red">{$value.total}</td>
+                                        <td style="color: red">
+                                            <if condition="($value.ispay eq 0)"> 待付款
+                                                <elseif condition="($value.ispay eq 1)"/> 已付款
+                                          </if>
+                                            <a href="{:U('Index/changePayState',array('id'=>$value['id'],'state'=>$value['ispay'],'tab'=>6))}">|&nbsp&nbsp操作</a>
+                                        </td>
+                                        <td style="color: red">
+                                            <if condition="($value.isdeliver eq 0)"> 待发货
+                                                <elseif condition="($value.isdeliver eq 1)"/> 已发货
+                                            </if>
+                                            <a href="{:U('Index/changeDeliverState',array('id'=>$value['id'],'state'=>$value['isdeliver'],'tab'=>6))}">|&nbsp&nbsp操作</a>
+                                        </td>
+                                        <td style="color: red">
+                                            <if condition="($value.iscomment eq 0)"> 待评价
+                                                <elseif condition="($value.iscomment eq 1)" /> 已评价
+                                            </if>
+                                        </td>
+                                    </tr>
+                                </foreach>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="award-deatil <if condition='($tab eq 7)'>show</if>">
+
+                        <div>
+                            <table class="table table-hover">
+                                <tr>
+                                    <th colspan="2">最新版本app</th>
+                                    <th>app名称: <?php echo $appInfo["appname"]?></th>
+                                    <th>app版本代码号: <?php echo $appInfo["versioncode"]?></th>
+                                    <th>app版本名称: <?php echo $appInfo["versionname"]?></th>
+                                </tr>
+                            </table>
+                        </div>
+                    <form class="form-horizontal" role="form" enctype="multipart/form-data" method="post" action="{:U('Index/uploadApp')}" id="form">
+                            <div class="form-group">
+                                <label for="inputTitle" class="col-lg-2 control-label">App名称</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputTitle" placeholder="App名称" style="width:180px" name="appName">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputNum" class="col-lg-2 control-label">App版本代码号</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputNum" placeholder="如:2" style="width:180px" name="versionCode">
+                                </div>
+                            </div>
+
+                             <div class="form-group">
+                               <label for="inputNum" class="col-lg-2 control-label">App版本名称</label>
+                                <div class="col-lg-10">
+                                  <input type="text" class="form-control" id="inputNum" placeholder="如:1.2" style="width:180px" name="versionName">
+                                </div>
+                            </div>
+
+                           <div class="form-group">
+                               <label for="inputNum" class="col-lg-2 control-label">更新内容</label>
+                               <div class="col-lg-10">
+                                   <textarea name="updateContent" cols="25" rows="8"></textarea>
+                               </div>
+                           </div>
+
+
+                            <div class="form-group">
+
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <input type="file" name="file" class="uploadApp" id="fileUpload3"/>
+                                    <label id="displayName3"></label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button type="submit" class="btn btn-default">确定</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

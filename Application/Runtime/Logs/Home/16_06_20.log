@@ -1,0 +1,61 @@
+[ 2016-06-20T17:54:03+08:00 ] ::1 /AppShopService/index.php/Home/index/getCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025253s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Connection refused /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+ERR: Connection refused
+
+[ 2016-06-20T17:56:13+08:00 ] ::1 /AppShopService/index.php/Home/index/getCommentData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.010051s ]
+SQL: SELECT * FROM `comment` LEFT JOIN product ON comment.pid = product.id LEFT JOIN user ON comment.uid = user.id   [ RunTime:0.005294s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.000496s ]
+SQL: SELECT `id` FROM `comment`  [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.001531s ]
+SQL: SELECT * FROM `subcomment` WHERE ( cid = 26 )  [ RunTime:0.000339s ]
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 341 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000402s ]
+SQL: SELECT * FROM `subcomment` WHERE ( cid = 27 )  [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 341 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000370s ]
+SQL: SELECT * FROM `subcomment` WHERE ( cid = 28 )  [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 341 行.
+SQL: SHOW COLUMNS FROM `subcomment` [ RunTime:0.000363s ]
+SQL: SELECT * FROM `subcomment` WHERE ( cid = 29 )  [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 341 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.387462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.387523s ]
+
+[ 2016-06-20T21:23:12+08:00 ] ::1 /AppShopService/index.php/Home/index/uploadPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+NOTIC: [8] Undefined index: image /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 182 行.
+
+[ 2016-06-20T21:25:09+08:00 ] ::1 /AppShopService/index.php/Home/index/uploadPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+NOTIC: [8] Undefined index: image /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 182 行.
+NOTIC: [8] Undefined index: image /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 183 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+

@@ -1,0 +1,349 @@
+[ 2016-05-31T00:03:30+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000572s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2016-05-31T11:44:47+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Connection refused /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+ERR: Connection refused
+
+[ 2016-05-31T11:45:15+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Connection refused /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+ERR: Connection refused
+
+[ 2016-05-31T11:45:34+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.009041s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021646s ]
+
+[ 2016-05-31T11:54:07+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000515s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-05-31T12:15:23+08:00 ] ::1 /AppShopService/index.php/Home/Index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000521s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010222s ]
+
+[ 2016-05-31T12:22:04+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000584s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2016-05-31T12:27:38+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000756s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-05-31T12:28:09+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000568s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000230s ]
+NOTIC: [2] tidy_get_root() expects exactly 1 parameter, 0 given /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2016-05-31T12:28:10+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000500s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000216s ]
+NOTIC: [2] tidy_get_root() expects exactly 1 parameter, 0 given /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2016-05-31T12:28:10+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000578s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000353s ]
+NOTIC: [2] tidy_get_root() expects exactly 1 parameter, 0 given /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2016-05-31T12:28:10+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.002509s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000327s ]
+NOTIC: [2] tidy_get_root() expects exactly 1 parameter, 0 given /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2016-05-31T12:28:11+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000622s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000293s ]
+NOTIC: [2] tidy_get_root() expects exactly 1 parameter, 0 given /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-05-31T12:28:11+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000673s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000354s ]
+NOTIC: [2] tidy_get_root() expects exactly 1 parameter, 0 given /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2016-05-31T12:28:38+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000530s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000230s ]
+NOTIC: [8] Use of undefined constant __Root__ - assumed '__Root__' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000879s ]
+
+[ 2016-05-31T12:28:39+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000583s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000217s ]
+NOTIC: [8] Use of undefined constant __Root__ - assumed '__Root__' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2016-05-31T12:31:48+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000541s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000257s ]
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Undefined index: i /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2016-05-31T12:31:49+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000518s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000214s ]
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Undefined index: i /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-05-31T12:31:49+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000740s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000298s ]
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Undefined index: i /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 111 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2016-05-31T12:32:38+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000509s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000232s ]
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+NOTIC: [8] Undefined index: i /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2016-05-31T12:33:27+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000602s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000308s ]
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+NOTIC: [8] Undefined index: i /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Volumes/FILE/Web/AppShopService/Application/Home/Controller/IndexController.class.php 第 113 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2016-05-31T12:36:31+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000490s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2016-05-31T12:38:18+08:00 ] ::1 /AppShopService/index.php/Home/index/getProducts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000468s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010192s ]
+

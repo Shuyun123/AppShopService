@@ -1,0 +1,70 @@
+body{
+    background:#f5f5f5;
+}
+ .android-background{
+    width: 315px;
+    height: 670px;
+    overflow:hidden;
+     margin:0 auto;
+    background: url("../../Img/Home/display_phone.png") no-repeat;
+}
+
+ .android-background .android-inner-img{
+     float:right;
+     /*margin: 80px 0 10 0;*/
+     margin-top: 46px;
+     margin-right:13px;
+     overflow:hidden;
+ }
+ .download-app{
+     margin: 70px 0 0 0;
+     position: relative;
+     width: 178px;
+     height: 59px;
+ }
+  .download-app ul li a{
+     display: block;
+     width: 178px;
+     height: 59px;
+     margin:30px auto 0;
+ }
+#download-android_li{
+     background: url("../../Img/Home/download-android.png") no-repeat;
+ }
+.download-android:hover{
+     background: url("../../Img/Home/download-android-hover.png") no-repeat;
+ }
+
+
+ .footer-wrap{
+     background: #333b46;
+     color: #4d5662;
+ }
+
+ .footer-wrap .footer{
+     text-align: center;
+ }
+ .footer-wrap .footer p{
+     display: block;
+     text-align: center;
+     margin:0 auto;
+     padding: 10px 0 0 0;
+ }
+
+a:link{
+    text-decoration:none;
+    color: #ffffff;
+
+}
+a:visited{
+    text-decoration:underline;
+    color: blueviolet;
+}
+a:hover{
+    text-decoration:underline;
+    color: blueviolet;
+}
+a:active{
+    text-decoration:underline;
+    color: blueviolet;
+}

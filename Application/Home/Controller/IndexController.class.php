@@ -254,6 +254,17 @@ class IndexController extends Controller {
         echo json_encode($data);
     }
 
+
+ public function getUpdateInfo(){
+        $data["appPath"] = "趣无穷.apk";
+        //$data["appName"] = $resultInfo[0]["appname"];
+        $data["versionCode"] = "1";
+        $data["versionName"] = "1";
+        $data["updateContent"] = "更改用户界面布局bug\r\n更改自动更新设置";
+        echo json_encode($data);
+    }
+
+
     public function updateUserSettingName(){
         $value = I('value',-1,'htmlspecialchars');
         $type = I('type',-1,'htmlspecialchars');

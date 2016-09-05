@@ -26,15 +26,15 @@ class LoginController extends Controller{
                 }
                 $this->redirect("Index/index");                 
             }else{
-            	echo "<script> alert('用户名或密码错误!');parent.location.href='index2.html'; </script>";
+            	echo "<script> alert('用户名或密码错误!');parent.location.href='index.html'; </script>";
    	    	    exit();
             }
    
        }else if($username == null){
-            echo "<script> alert('用户名不能为空!');parent.location.href='index2.html'; </script>";
+            echo "<script> alert('用户名不能为空!');parent.location.href='index.html'; </script>";
    	    	exit();
        }else if($password == null){
-            echo "<script> alert('密码不能为空!');parent.location.href='index2.html'; </script>";
+            echo "<script> alert('密码不能为空!');parent.location.href='index.html'; </script>";
    	    	exit();
        }
     }

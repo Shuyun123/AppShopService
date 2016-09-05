@@ -295,25 +295,26 @@ class IndexController extends CommonController {
        $versionName = I('versionName',null,'htmlspecialchars');
        $updateContent = I('updateContent',null,'htmlspecialchars');
 
+
        if($appName == null){
-           echo "<script> alert('请填写app名称!');parent.location.href='index2.html/tab/7'; </script>";
+           echo "<script> alert('请填写app名称!');parent.location.href='index/tab/7.html'; </script>";
            exit();
 
        }
 
        if($versionCode == 0){
-           echo "<script> alert('请填写app版本代码号!');parent.location.href='index/tab/7/.html'; </script>";
+           echo "<script> alert('请填写app版本代码号!');parent.location.href='index/tab/7.html'; </script>";
            exit();
        }
 
        $result = explode(".",$versionName);
        $versionNameNumber = $result[0].$result[1];
        if(!is_numeric($versionNameNumber) || $versionNameNumber <= 10 || $versionNameNumber >= 100){
-           echo "<script> alert('请填写app版本名称!');parent.location.href='index/tab/7/.html'; </script>";
+           echo "<script> alert('请填写app版本名称!');parent.location.href='index/tab/7.html'; </script>";
            exit();
        }
        if($_FILES['file']['size']==0){
-           echo "<script> alert('没有选择app!');parent.location.href='index/tab/7/.html'; </script>";
+           echo "<script> alert('没有选择app!');parent.location.href='index/tab/7.html'; </script>";
            exit();
        }
 
@@ -328,7 +329,7 @@ class IndexController extends CommonController {
        }
 
        if($updateContent == null){
-           echo "<script> alert('请填写app名称!');parent.location.href='index2.html/tab/7'; </script>";
+           echo "<script> alert('请填写app名称!');parent.location.href='index/tab/7.html'; </script>";
            exit();
 
        }

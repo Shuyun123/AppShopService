@@ -1,0 +1,442 @@
+[ 2016-09-05T12:57:51+08:00 ] ::1 /AppShopService/index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Undefined index: username /Volumes/FILE/Web/AppShopService/Application/Admin/Controller/CommonController.class.php 第 8 行.
+NOTIC: [8] Undefined index: remember /Volumes/FILE/Web/AppShopService/Application/Admin/Controller/CommonController.class.php 第 9 行.
+
+[ 2016-09-05T12:57:51+08:00 ] ::1 /AppShopService/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2016-09-05T12:57:58+08:00 ] ::1 /AppShopService/index.php/Admin/Login/dealData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Connection refused /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+ERR: Connection refused
+
+[ 2016-09-05T12:58:15+08:00 ] ::1 /AppShopService/index.php/Admin/Login/dealData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+ERR: Unknown database 'appservice'
+
+[ 2016-09-05T12:59:47+08:00 ] ::1 /AppShopService/index.php/Admin/Login/dealData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.003608s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.001001s ]
+SQL: UPDATE `admin` SET `logintime`=1473051587 WHERE ( id=1 ) [ RunTime:0.000881s ]
+
+[ 2016-09-05T12:59:47+08:00 ] ::1 /AppShopService/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.001108s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000909s ]
+SQL: SELECT * FROM `product` ORDER BY type asc  [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001029s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.001009s ]
+SQL: SELECT * FROM `buy` INNER JOIN  user on buy.uid = user.id INNER JOIN product on buy.pid = product.id   [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.000891s ]
+SQL: SELECT `id` FROM `buy`  [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `updateapp` [ RunTime:0.001102s ]
+SQL: SELECT * FROM `updateapp` ORDER BY updatetime desc  [ RunTime:0.000256s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined variable: show /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2016-09-05T12:59:50+08:00 ] ::1 /AppShopService/index.php/Admin/Index/index/tab/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.001112s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000954s ]
+SQL: SELECT * FROM `product` ORDER BY type asc  [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001050s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.001020s ]
+SQL: SELECT * FROM `buy` INNER JOIN  user on buy.uid = user.id INNER JOIN product on buy.pid = product.id   [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.000893s ]
+SQL: SELECT `id` FROM `buy`  [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `updateapp` [ RunTime:0.001020s ]
+SQL: SELECT * FROM `updateapp` ORDER BY updatetime desc  [ RunTime:0.000252s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: show /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2016-09-05T13:00:18+08:00 ] ::1 /AppShopService/index.php/Admin/Index/uploadApp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+
+[ 2016-09-05T13:00:23+08:00 ] ::1 /AppShopService/index.php/Admin/Index/index/tab/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.003958s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.001170s ]
+SQL: SELECT * FROM `product` ORDER BY type asc  [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001263s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.001192s ]
+SQL: SELECT * FROM `buy` INNER JOIN  user on buy.uid = user.id INNER JOIN product on buy.pid = product.id   [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.001285s ]
+SQL: SELECT `id` FROM `buy`  [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `updateapp` [ RunTime:0.001220s ]
+SQL: SELECT * FROM `updateapp` ORDER BY updatetime desc  [ RunTime:0.000369s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+NOTIC: [8] Undefined variable: show /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2016-09-05T13:15:33+08:00 ] ::1 /AppShopService/index.php/Admin/Index/index/tab/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.001499s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.000975s ]
+SQL: SELECT * FROM `product` ORDER BY type asc  [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000981s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.000999s ]
+SQL: SELECT * FROM `buy` INNER JOIN  user on buy.uid = user.id INNER JOIN product on buy.pid = product.id   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.000899s ]
+SQL: SELECT `id` FROM `buy`  [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `updateapp` [ RunTime:0.000993s ]
+SQL: SELECT * FROM `updateapp` ORDER BY updatetime desc  [ RunTime:0.000235s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined variable: show /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016760s ]
+
+[ 2016-09-05T13:26:06+08:00 ] ::1 /AppShopService/index.php/Admin/Index/uploadApp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016295s ]
+
+[ 2016-09-05T16:00:49+08:00 ] ::1 /AppShopService/index.php/Admin/Index/index/tab/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.003136s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.001449s ]
+SQL: SELECT * FROM `product` ORDER BY type asc  [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001396s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.001162s ]
+SQL: SELECT * FROM `buy` INNER JOIN  user on buy.uid = user.id INNER JOIN product on buy.pid = product.id   [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.001457s ]
+SQL: SELECT `id` FROM `buy`  [ RunTime:0.000236s ]
+SQL: SHOW COLUMNS FROM `updateapp` [ RunTime:0.001368s ]
+SQL: SELECT * FROM `updateapp` ORDER BY updatetime desc  [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: show /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014677s ]
+
+[ 2016-09-05T16:01:46+08:00 ] ::1 /AppShopService/index.php/Admin/Index/uploadApp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-09-05T16:02:49+08:00 ] ::1 /AppShopService/index.php/Admin/Index/index/tab/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.001909s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.001102s ]
+SQL: SELECT * FROM `product` ORDER BY type asc  [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001702s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.001664s ]
+SQL: SELECT * FROM `buy` INNER JOIN  user on buy.uid = user.id INNER JOIN product on buy.pid = product.id   [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.000937s ]
+SQL: SELECT `id` FROM `buy`  [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `updateapp` [ RunTime:0.001383s ]
+SQL: SELECT * FROM `updateapp` ORDER BY updatetime desc  [ RunTime:0.000239s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined variable: show /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2016-09-05T16:03:03+08:00 ] ::1 /AppShopService/index.php/Admin/Index/uploadApp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `updateapp` [ RunTime:0.001227s ]
+SQL: SELECT * FROM `updateapp` WHERE ( versioncode = '3' ) LIMIT 1   [ RunTime:0.000658s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `updateapp` [ RunTime:0.002886s ]
+SQL: INSERT INTO `updateapp` (`appname`,`versioncode`,`updatetime`,`apppath`,`versionname`,`updatecontent`) VALUES ('洛克商城','3',1473062583,'洛克商城.apk','1.2','dfsafda') [ RunTime:0.001138s ]
+
+[ 2016-09-05T16:03:05+08:00 ] ::1 /AppShopService/index.php/Admin/Index/index/tab/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.001456s ]
+SQL: SELECT * FROM `banner`  [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.001351s ]
+SQL: SELECT * FROM `product` ORDER BY type asc  [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001967s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.001903s ]
+SQL: SELECT * FROM `buy` INNER JOIN  user on buy.uid = user.id INNER JOIN product on buy.pid = product.id   [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `buy` [ RunTime:0.001129s ]
+SQL: SELECT `id` FROM `buy`  [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `updateapp` [ RunTime:0.001527s ]
+SQL: SELECT * FROM `updateapp` ORDER BY updatetime desc  [ RunTime:0.000354s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: show /Volumes/FILE/Web/AppShopService/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2016-09-05T16:17:45+08:00 ] ::1 /AppShopService/index.php/Admin/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2016-09-05T16:17:52+08:00 ] ::1 /AppShopService/index.php/Admin/Login/dealData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.003338s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.000371s ]
+
+[ 2016-09-05T16:17:55+08:00 ] ::1 /AppShopService/index.php/Admin/Login/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+ERR: 非法操作:index2
+
+[ 2016-09-05T16:19:49+08:00 ] ::1 /AppShopService/index.php/Admin/Login/dealData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.001703s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.000263s ]
+
+[ 2016-09-05T16:19:50+08:00 ] ::1 /AppShopService/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2016-09-05T16:20:00+08:00 ] ::1 /AppShopService/index.php/Admin/Login/dealData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Volumes/FILE/Web/AppShopService/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.001284s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.000239s ]
+
+[ 2016-09-05T16:20:01+08:00 ] ::1 /AppShopService/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+

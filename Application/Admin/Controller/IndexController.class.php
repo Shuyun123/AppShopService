@@ -149,23 +149,23 @@ class IndexController extends CommonController {
         $storage = I('storage',0,'htmlspecialchars');
 
         if($productName == null){
-            echo "<script> alert('商品名称不能为空!');parent.location.href='index2.html'; </script>";
+            echo "<script> alert('商品名称不能为空!');parent.location.href='index.html'; </script>";
             exit();
         }else{
             $productResult= M()->table('product')->where(array('name'=>$productName,'type'=>$productType,'color'=>$color,'storage'=>$storage,'carrieroperator'=>$carrieroperator))->find();
             if($productResult != null){
-                echo "<script> alert('该商品名已经添加过,请删除再添加!');parent.location.href='index2.html'; </script>";
+                echo "<script> alert('该商品名已经添加过,请删除再添加!');parent.location.href='index.html'; </script>";
                 exit();
             }
         }
 
         if($price <= 0 || !is_numeric($price)){
-            echo "<script> alert('请填写商品的价格!');parent.location.href='index2.html'; </script>";
+            echo "<script> alert('请填写商品的价格!');parent.location.href='index.html'; </script>";
             exit();
         }
 
         if($_FILES['file']['size']==0){
-            echo "<script> alert('图片不能为空!');parent.location.href='index2.html'; </script>";
+            echo "<script> alert('图片不能为空!');parent.location.href='index.html'; </script>";
             exit();
         }
 
@@ -204,10 +204,10 @@ class IndexController extends CommonController {
 
             $result = M()->table('product')->data($data)->add();
             if($result){
-                echo "<script> alert('添加商品成功!');parent.location.href='index2.html'; </script>";
+                echo "<script> alert('添加商品成功!');parent.location.href='index.html'; </script>";
                 exit();
             }else{
-                echo "<script> alert('添加商品失败!');parent.location.href='index2.html'; </script>";
+                echo "<script> alert('添加商品失败!');parent.location.href='index.html'; </script>";
                 exit();
             }
         }else{
@@ -221,29 +221,29 @@ class IndexController extends CommonController {
         $introduceImg = I('introduceImg',null,'htmlspecialchars');
 
         if($pictureName == null){
-            echo "<script> alert('图片名称不能为空!');parent.location.href='index2.html'; </script>";
+            echo "<script> alert('图片名称不能为空!');parent.location.href='index.html'; </script>";
             exit();
         }else{
 
             $pictureResult = M()->table('banner')->where(array('name'=>$pictureName))->find();
             if($pictureResult != null){
-                echo "<script> alert('该图片名已经添加过,请删除再添加!');parent.location.href='index2.html'; </script>";
+                echo "<script> alert('该图片名已经添加过,请删除再添加!');parent.location.href='index.html'; </script>";
                 exit();
             }
         }
 
         if($id <= 0 || !is_numeric($id)){
-            echo "<script> alert('请填写正确的图片id!');parent.location.href='index2.html'; </script>";
+            echo "<script> alert('请填写正确的图片id!');parent.location.href='index.html'; </script>";
             exit();
         }
 
         if($introduceImg == null){
-            echo "<script> alert('图片描述不能为空!');parent.location.href='index2.html'; </script>";
+            echo "<script> alert('图片描述不能为空!');parent.location.href='index.html'; </script>";
             exit();
         }
 
         if($_FILES['file']['size']==0){
-            echo "<script> alert('图片不能为空!');parent.location.href='index2.html'; </script>";
+            echo "<script> alert('图片不能为空!');parent.location.href='index.html'; </script>";
             exit();
         }
 
@@ -268,10 +268,10 @@ class IndexController extends CommonController {
 
             $result = M()->table('banner')->data($data)->add();
             if($result){
-                echo "<script> alert('添加轮播图片成功!');parent.location.href='index2.html'; </script>";
+                echo "<script> alert('添加轮播图片成功!');parent.location.href='index.html'; </script>";
                 exit();
             }else{
-                echo "<script> alert('添加轮播图片失败!');parent.location.href='index2.html'; </script>";
+                echo "<script> alert('添加轮播图片失败!');parent.location.href='index.html'; </script>";
                 exit();
             }
         }else{

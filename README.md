@@ -6,6 +6,18 @@
 前台显示采用了模板，再根据自己更改所成的。后台的主要功能包括app轮播图片添加，用户订单的显示，状态更改，商品的添加删除，用户列表和app更新上传等功能。数据库采用的是Mysql,sql文件在项目目录里面。后台默认登录用户为admin，登录密码为123。由于个人能力和精力有限，所以代码写得不很是好，只是完成了功能设计。还有待改进，欢迎大家指正。
 
 
+# 搭建
+下载WAMP服务器,配置数据库,导入SQL文件
+
+后台地址：
+```
+http://localhost/AppShopService/index.php/Admin/Index/index
+```
+前台地址：
+```
+http://localhost/AppShopService/index.php/Home/Index/index
+```
+
 # 注意:
 由于后台有上传功能，所以服务器上传大小限制要预习设置一下。同时Android评论采用了emoji表情，所以插入数据库采用的是utf8mb4编码格式。不然可能无法插入数据。
 

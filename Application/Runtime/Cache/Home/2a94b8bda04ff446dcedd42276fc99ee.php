@@ -1,4 +1,4 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE html>
 <!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
@@ -14,25 +14,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no minimal-ui">
 
 
-    <link rel="shortcut icon" href="__PUBLIC__/Img/Home/favicon.ico" />
+    <link rel="shortcut icon" href="/AppShopService/Public/Img/Home/favicon.ico" />
 
     <!-- CSS Global Compulsory-->
-    <link rel="stylesheet" href="__PUBLIC__/Css/Home/bootstrap.min.css" />
-    <link rel="stylesheet" href="__PUBLIC__/Css/Home/style.css" />
+    <link rel="stylesheet" href="/AppShopService/Public/Css/Home/bootstrap.min.css" />
+    <link rel="stylesheet" href="/AppShopService/Public/Css/Home/style.css" />
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="__PUBLIC__/Css/Home/line-icons.css">
-    <link rel="stylesheet" href="__PUBLIC__/Css/Home/font-awesome.min.css">
-    <link rel="stylesheet" href="__PUBLIC__/Css/Home/flexslider.css">
-    <link rel="stylesheet" href="__PUBLIC__/Css/Home/jquery.bxslider.css">
-    <link rel="stylesheet" href="__PUBLIC__/Css/Home/horizontal-parallax.css">
+    <link rel="stylesheet" href="/AppShopService/Public/Css/Home/line-icons.css">
+    <link rel="stylesheet" href="/AppShopService/Public/Css/Home/font-awesome.min.css">
+    <link rel="stylesheet" href="/AppShopService/Public/Css/Home/flexslider.css">
+    <link rel="stylesheet" href="/AppShopService/Public/Css/Home/jquery.bxslider.css">
+    <link rel="stylesheet" href="/AppShopService/Public/Css/Home/horizontal-parallax.css">
 
     <!-- CSS Theme -->
-    <link rel="stylesheet" href="__PUBLIC__/Css/Home/default.css" id="style_color">
+    <link rel="stylesheet" href="/AppShopService/Public/Css/Home/default.css" id="style_color">
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="__PUBLIC__/Css/Home/custom.css">
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/Home/index.css">
+    <link rel="stylesheet" href="/AppShopService/Public/Css/Home/custom.css">
+    <link rel="stylesheet" type="text/css" href="/AppShopService/Public/Css/Home/index.css">
 
 </head>
 
@@ -56,7 +56,7 @@
 
     <div class="view row">
         <div class="span12" style="text-align:center;">
-            <a href="javascript:void(0);" onclick="javascript:install();"><img src="__PUBLIC__/Img/Home/ic_launcher.png" class="appicon" onerror="javascript:this.src='http://o1wjx1evz.qnssl.com/static-20160507/assets/img/default-icon.png';" /></a>
+            <a href="javascript:void(0);" onclick="javascript:install();"><img src="/AppShopService/Public/Img/Home/ic_launcher.png" class="appicon" onerror="javascript:this.src='http://o1wjx1evz.qnssl.com/static-20160507/assets/img/default-icon.png';" /></a>
             <div>
             </div>
         </div>
@@ -83,7 +83,7 @@
         <div class="span12" style="text-align:center;">
             或者用手机扫描下面的二维码安装            <br />
             <br />
-            <img src="__PUBLIC__/Img/Home/code.png" style="width:156px; height:156px;" />
+            <img src="/AppShopService/Public/Img/Home/code.png" style="width:156px; height:156px;" />
         </div>
     </div>
 
@@ -106,58 +106,58 @@
                     <span class="android-inner-img" id="slider_android" >
 						<ul style="list-style: none;">
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce1.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce1.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce2.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce2.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce3.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce3.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce4.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce4.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce5.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce5.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce6.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce6.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce7.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce7.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce8.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce8.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce9.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce9.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce10.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce10.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce11.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce11.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce12.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce12.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce13.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce13.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce14.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce14.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce15.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce15.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce16.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce16.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce17.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce17.png" />
                             </li>
                             <li style="display: none;height: 485px">
-                                <img src="__PUBLIC__/Img/Home/introduce18.png" />
+                                <img src="/AppShopService/Public/Img/Home/introduce18.png" />
                             </li>
 
                         </ul>
@@ -175,7 +175,7 @@
 <!--=== Copyright ===-->
 
 
-<link rel="stylesheet" href="__PUBLIC__/Css/Home/custom-sky-forms.css">
+<link rel="stylesheet" href="/AppShopService/Public/Css/Home/custom-sky-forms.css">
 
 <style>
     .state-error em{
@@ -223,8 +223,8 @@
         </p>
     </div>
 </div>
-<script type="text/javascript" src="__PUBLIC__/JS/Home/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/JS/Home/jquery.sudoSlider.min.js"></script>
+<script type="text/javascript" src="/AppShopService/Public/JS/Home/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/AppShopService/Public/JS/Home/jquery.sudoSlider.min.js"></script>
 <script>
 
     $(document).ready(function(){

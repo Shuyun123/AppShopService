@@ -8,7 +8,7 @@ return array(
     'DB_FIELD_CACHE'=>false,
     'HTML_CACHE_ON'=>false,
 
-    'DB_TYPE'   => 'mysql', // 数据库类型
+    'DB_TYPE'   => 'mysqli', // 数据库类型, php7更改支持为mysqli, php5可以更改为mysql
     'DB_HOST'   => '127.0.0.1', // 服务器地址
     'DB_NAME'   => 'AppService', // 数据库名
     'DB_USER'   => 'root', // 用户名
